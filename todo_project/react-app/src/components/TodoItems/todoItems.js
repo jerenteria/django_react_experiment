@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const AddItem = props = {
-    
+const AddItem = props => {
+    const [enteredItem, setEnteredItem] = useState(''); 
+
 };
 
 export default todoItems;
