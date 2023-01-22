@@ -4,8 +4,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Hello World to my first django react app!</h1>
-      <h1>Hello</h1>
+      <h1>Changed</h1>
+      <h2>Changed this thing again!</h2>
     </div>
   );
 }
