@@ -10,7 +10,7 @@ function App() {
 
   let getItems = async () => {
     let response = fetch('http://localhost:8000/')
-    let data = await response.json()
+    let data = (await response).json
     console.log(data)
     setItems(data)
   };
