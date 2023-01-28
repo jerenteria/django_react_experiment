@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
-import ListItem from './components/ListItem'
+import ListItem from './components/ListItem' 
+import Header from './components/Header';
 
 function App() {
   // useState is an empty arr that will fill up with the notes that we create then later render on screen
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <div className="item-list">
+      <Header />
       {items.map((item, index) => (
         <ListItem key={index} item={item} />
       ))}

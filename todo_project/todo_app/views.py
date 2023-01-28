@@ -21,3 +21,6 @@ def get_one_item(request, item_id):
     # Tell note serializer to pass in all_items and set many to false b/c we are passing only one object
     serializer = ItemSerializer(one_item, many=False)
     return Response(serializer.data)
+
+@api_view(['POST'])
+@permission_classes((permissions.AllowAny,))
