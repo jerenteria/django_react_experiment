@@ -1,8 +1,10 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
+import ListItem from './components/ListItem'
 
 function App() {
-  let [items, setItems] = useState()
+  // useState is an empty arr that will fill up with the notes that we create then later render on screen
+  let [items, setItems] = useState([])
 
   useEffect(() => {
     getItems()
@@ -16,8 +18,10 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <h1>Notes</h1>
+    <div className="item-list">
+      {items.map((item, index) => (
+        <ListItem key={index} item={item} />
+      ))}
     </div>
   );
 }
