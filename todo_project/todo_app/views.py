@@ -22,5 +22,5 @@ def get_one_item(request, item_id):
     serializer = ItemSerializer(one_item, many=False)
     return Response(serializer.data)
 
-@api_view(['POST'])
-@permission_classes((permissions.AllowAny,))
+# @api_view(['POST'])
+# @permission_classes((permissions.AllowAny,))
